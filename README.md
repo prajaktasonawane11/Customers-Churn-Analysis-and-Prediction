@@ -19,11 +19,18 @@ The dataset consists of 100,000 observations and 12 variables. Here's a brief ov
 - EstimatedSalary: Higher salaries may correlate with lower churn.
 - Exited: Target variable indicating whether the customer left the bank.
 
-# Model Development:
-We used the LightGBM algorithm for this task, a gradient boosting framework that delivers high performance and efficiency. The model was optimized using hyperparameter tuning to maximize accuracy.
+# Model Development and Evaluation:
+- Logistic Regression (LR): Achieved an accuracy of 74.71%, providing a baseline performance.
+- K-Nearest Neighbors (KNN): Achieved an accuracy of 75.61%.
+- Classification and Regression Trees (CART): Achieved an accuracy of 79.88%.
+- Random Forest (RF): Achieved an accuracy of 86.19%.
+- Support Vector Machine (SVM): Achieved an accuracy of 80.01%.
+- XGBoost (XGB): Achieved an accuracy of 88.90%.
+- LightGBM: Achieved the highest accuracy of 90.47%.
+- CatBoost: Achieved an accuracy of 90.94%, demonstrating strong performance.
 
-# Results:
-The final model achieved an accuracy score of 91.16%. This indicates that the model is able to correctly classify customers as churned or retained with high accuracy.
+# Results and Conclusion:
+Among the models trained, CatBoost and LightGBM emerged as the top performers, with accuracies of 90.94% and 90.47%, respectively. These models outperformed other algorithms such as Logistic Regression and KNN, indicating the effectiveness of gradient boosting techniques for this task.
 
 # Files Included:
 - Dataset: Contains the dataset used for training and testing the model.
