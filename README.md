@@ -20,20 +20,13 @@ The dataset consists of 10,000 observations and 12 variables. Here's a brief ove
 - Exited: Target variable indicating whether the customer left the bank.
 
 # Model Development and Evaluation:
-- Logistic Regression (LR): Achieved an accuracy of 74.71%, providing a baseline performance.
-- K-Nearest Neighbors (KNN): Achieved an accuracy of 75.61%.
-- Classification and Regression Trees (CART): Achieved an accuracy of 79.88%.
-- Random Forest (RF): Achieved an accuracy of 86.19%.
-- Support Vector Machine (SVM): Achieved an accuracy of 80.01%.
-- XGBoost (XGB): Achieved an accuracy of 88.90%.
-- LightGBM: Achieved the highest accuracy of 90.47%.
-- CatBoost: Achieved an accuracy of 90.94%, demonstrating strong performance.
-
-# Results and Conclusion:
-Among the models trained, CatBoost and LightGBM emerged as the top performers, with accuracies of 90.94% and 90.47%, respectively. These models outperformed other algorithms such as Logistic Regression and KNN, indicating the effectiveness of gradient boosting techniques for this task.
+- Gradient Boosting has the highest F1 score (0.598391) and the highest ROC AUC score (0.859767) among all the models. This suggests that Gradient Boosting is the most effective model in balancing precision and recall and has the best ability to distinguish between the churned and non-churned customers.
+- XGBoost also performs well, with a relatively high F1 score (0.586974) and a good ROC AUC score (0.841784). This indicates that XGBoost is another strong model for this task.
+- Random Forest has a high accuracy (0.862000) but a lower F1 score (0.538976) compared to Gradient Boosting and XGBoost. This suggests that while Random Forest is good at predicting the majority class (non-churned customers), it might not be as effective at identifying the minority class (churned customers).
+- Support Vector Machine and K-Nearest Neighbors have moderate F1 scores and ROC AUC scores. They perform better than Logistic Regression but are not as effective as Gradient Boosting or XGBoost for this dataset.
+- Logistic Regression has the lowest accuracy (0.703667), F1 score (0.473029), and ROC AUC score (0.764076) among all the models. This indicates that Logistic Regression is the least effective model for predicting customer churn in this dataset.
 
 # Files Included:
 - Dataset: Contains the dataset used for training and testing the model.
-- Model: Includes the trained LightGBM model.
 - Notebooks: Jupyter notebooks detailing the data exploration, preprocessing, model development, and evaluation.
 - README: This file, providing an overview of the project.
