@@ -26,7 +26,11 @@ The dataset consists of 10,000 observations and 12 variables. Here's a brief ove
 - Support Vector Machine and K-Nearest Neighbors have moderate F1 scores and ROC AUC scores. They perform better than Logistic Regression but are not as effective as Gradient Boosting or XGBoost for this dataset.
 - Logistic Regression has the lowest accuracy (0.703667), F1 score (0.473029), and ROC AUC score (0.764076) among all the models. This indicates that Logistic Regression is the least effective model for predicting customer churn in this dataset.
 
+# Dashboard:
+![Dashboard](https://github.com/prajaktasonawane11/Customers-Churn-Analysis-and-Prediction/blob/main/Customer_Churn_Dashboard.png)
+
 # Files Included:
 - Dataset: Contains the dataset used for training and testing the model.
 - Notebooks: Jupyter notebooks detailing the data exploration, preprocessing, model development, and evaluation.
+- Tableau Dashboard file and the Screenshot of the Dashboard.
 - README: This file, providing an overview of the project.
